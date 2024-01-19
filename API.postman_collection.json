@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "4a9629fa-a00d-4428-8183-e1c11e41602e",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20450109",
+		"_collection_link": "https://www.postman.com/dark-star-65555/workspace/pruebatecnica/collection/20450109-4a9629fa-a00d-4428-8183-e1c11e41602e?action=share&source=collection_link&creator=20450109"
+	},
+	"item": [
+		{
+			"name": "Users Endpoint 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Name\":\"Javier\",\r\n  \"LastName\":\"Moraga\",\r\n  \"Email\":\"javiermoragav@gmail.com\",\r\n  \"Phone\":\"945284419\",\r\n  \"Password\":\"pepito123\",\r\n  \"CreatedAt\":\"19-01-2024 17:18\",\r\n  \"UpdatedAt\":\"19-01-2024 17:18\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5281/Users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5281",
+					"path": [
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users Endpoint 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5281/Users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5281",
+					"path": [
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encrypt Endpoint 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"ABC\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5281/Encrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5281",
+					"path": [
+						"Encrypt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Decrypt Endpoint 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"encrypted\": \"dCOarINZ0hRgpmYvCXTnVw==\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5281/Decrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5281",
+					"path": [
+						"Decrypt"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
